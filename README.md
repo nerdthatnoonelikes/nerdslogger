@@ -3,7 +3,7 @@
 ```js
 const log = require("nerdslogger")
 
-log.info("some info")
-log.warn("warning");
-log.error("error")
+const logger = new log.Logger("test")
+
+logger.error("some scary error")
 ```
