@@ -1,5 +1,7 @@
 ### This is a **very** simple logger made for my personal projects
 
+[![NPM](https://nodei.co/npm/<package>.png?mini=true)](https://npmjs.org/package/nerdslogger)
+
 ```js
 const log = require("nerdslogger")
 
