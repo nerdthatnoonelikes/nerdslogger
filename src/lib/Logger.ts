@@ -1,7 +1,7 @@
 import chalk from "chalk";
 import moment from "moment";
 
-export class Logger {
+export default class Logger {
     public name: string
     public highlight: boolean
     public constructor(name: string, highlight: boolean) {
