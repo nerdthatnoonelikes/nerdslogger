@@ -1,6 +1,9 @@
 import {logger} from "../../dist/index"
 
-const log = new logger("name", false)
+const log = new logger({
+  name: "test",
+  highlight: false
+})
 
 log.info("hello")
 log.warn("hello")
