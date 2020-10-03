@@ -16,10 +16,10 @@ export default class Logger {
 
     if (this.highlight === true) {
       const time = moment().format("HH:mm:ss");
-      console.log(chalk.bgYellow(`[${this.name}]: ${time} | ${data}`));
+      console.log(chalk.bgYellow(`[${this.name}] [WARN]: ${time} - ${data}`));
     } else {
       const time = moment().format("HH:mm:ss");
-      console.log(chalk.yellowBright(`[${this.name}]: ${time} | ${data}`));
+      console.log(chalk.yellowBright(`[${this.name}] [WARN]: ${time} - ${data}`));
     }
   };
 
@@ -28,10 +28,10 @@ export default class Logger {
 
     if (this.highlight === true) {
       const time = moment().format("HH:mm:ss");
-      console.log(chalk.bgRed(`[${this.name}]: ${time} | ${data}`));
+      console.log(chalk.bgRed(`[${this.name}] [ERROR]: ${time} - ${data}`));
     } else {
       const time = moment().format("HH:mm:ss");
-      console.log(chalk.red(`[${this.name}]: ${time} | ${data}`));
+      console.log(chalk.red(`[${this.name}] [ERROR]: ${time} - ${data}`));
     }
   };
 
@@ -40,10 +40,10 @@ export default class Logger {
 
     if (this.highlight === true) {
       const time = moment().format("HH:mm:ss");
-      console.log(chalk.bgBlue(`[${this.name}]: ${time} | ${data}`));
+      console.log(chalk.bgBlue(`[${this.name}] [INFO]: ${time} - ${data}`));
     } else {
       const time = moment().format("HH:mm:ss");
-      console.log(chalk.blue(`[${this.name}]: ${time} | ${data}`));
+      console.log(chalk.blue(`[${this.name}] [INFO]: ${time} - ${data}`));
     }
   };
 }
